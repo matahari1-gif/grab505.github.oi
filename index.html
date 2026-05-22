@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WELCOME TRUSTED COMPANY</title>
+  <title>WELCOME GRAB COMPANY</title>
 
   <style>
 
@@ -10,22 +10,12 @@
       padding:0;
       font-family:Arial;
       color:white;
-      overflow-x:hidden;
-    }
 
-    /* VIDEO BACKGROUND */
+      background-image:url('https://images.unsplash.com/photo-1596838132731-3301c3fd4317?q=80&w=2000');
 
-    #bgvideo{
-      position:fixed;
-      right:0;
-      bottom:0;
-
-      min-width:100%;
-      min-height:100%;
-
-      z-index:-1;
-
-      object-fit:cover;
+      background-size:cover;
+      background-position:center;
+      background-attachment:fixed;
     }
 
     .overlay{
@@ -41,70 +31,69 @@
 
       font-size:120px;
 
-      color:gold;
+      color:#00ffcc;
 
       margin-bottom:20px;
 
       text-shadow:
-      0 0 20px gold,
-      0 0 40px orange,
-      0 0 60px gold;
+      0 0 20px #00ffcc,
+      0 0 40px #00ffee,
+      0 0 60px #00ffcc;
 
-      animation:blink 1.5s infinite;
+      animation:glow 1.5s infinite alternate;
     }
 
     h2{
       text-align:center;
 
-      font-size:60px;
+      font-size:55px;
+
+      color:#ff66ff;
 
       letter-spacing:8px;
 
-      margin-bottom:50px;
+      margin-bottom:80px;
 
       text-shadow:
-      0 0 15px cyan,
-      0 0 30px white;
+      0 0 15px #ff66ff,
+      0 0 30px #ff00ff;
     }
 
-    @keyframes blink{
-      50%{
-        opacity:0.7;
+    @keyframes glow{
+      from{
+        text-shadow:
+        0 0 20px #00ffcc,
+        0 0 40px #00ffee;
+      }
+
+      to{
+        text-shadow:
+        0 0 30px #00ffcc,
+        0 0 60px cyan;
       }
     }
 
-    /* JACKPOT VIDEO */
-
-    .jackpot{
-      display:flex;
-      justify-content:center;
-      margin-bottom:80px;
-    }
-
-    .jackpot video{
-      width:1000px;
-
-      border-radius:30px;
-
-      box-shadow:
-      0 0 30px gold,
-      0 0 60px orange;
-    }
-
-    /* COMPANY */
+    /* ROW */
 
     .row{
       display:flex;
+
       justify-content:center;
+
       gap:70px;
+
       margin-bottom:70px;
+
       flex-wrap:wrap;
     }
 
+    /* CARD */
+
     .card{
+
       width:420px;
 
-      background:rgba(255,255,255,0.10);
+      background:rgba(255,255,255,0.08);
 
       border-radius:35px;
 
@@ -115,21 +104,22 @@
       backdrop-filter:blur(8px);
 
       box-shadow:
-      0 0 30px gold,
-      0 0 50px orange;
+      0 0 25px #00ffee,
+      0 0 45px #ff00ff;
     }
 
     .card img{
+
       width:380px;
       height:380px;
 
       object-fit:cover;
 
-      border-radius:30px;
+      border-radius:25px;
 
       box-shadow:
-      0 0 30px cyan,
-      0 0 50px blue;
+      0 0 25px cyan,
+      0 0 45px blue;
 
       transition:0.3s;
     }
@@ -138,9 +128,10 @@
       transform:scale(1.05);
     }
 
-    /* BUTTON */
+    /* WHATSAPP BUTTON */
 
     .btn{
+
       display:block;
 
       margin-top:25px;
@@ -157,14 +148,17 @@
 
       color:white;
 
-      background:linear-gradient(45deg,gold,orange);
+      background:linear-gradient(45deg,#ff512f,#dd2476);
 
       box-shadow:
-      0 0 20px gold,
-      0 0 40px orange;
+      0 0 20px #ff512f,
+      0 0 40px #dd2476;
     }
 
+    /* TELEGRAM BUTTON */
+
     .btn2{
+
       display:block;
 
       margin-top:22px;
@@ -181,23 +175,26 @@
 
       color:white;
 
-      background:linear-gradient(45deg,#00c6ff,#0072ff);
+      background:linear-gradient(45deg,#36d1dc,#5b86e5);
 
       box-shadow:
-      0 0 20px cyan,
-      0 0 40px blue;
+      0 0 20px #36d1dc,
+      0 0 40px #5b86e5;
     }
 
     .footer{
+
       text-align:center;
 
       margin-top:80px;
 
       font-size:35px;
 
+      color:white;
+
       text-shadow:
       0 0 10px white,
-      0 0 20px gold;
+      0 0 20px cyan;
     }
 
   </style>
@@ -206,31 +203,11 @@
 
 <body>
 
-<!-- BACKGROUND VIDEO -->
-
-<video autoplay muted loop id="bgvideo">
-
-<source src="https://files.catbox.moe/7wz8q2.mp4" type="video/mp4">
-
-</video>
-
 <div class="overlay">
 
-<h1>🎰 WELCOME 🎰</h1>
+<h1>🔥 WELCOME 🔥</h1>
 
-<h2>TRUSTED COMPANY</h2>
-
-<!-- JACKPOT VIDEO -->
-
-<div class="jackpot">
-
-<video autoplay muted loop controls>
-
-<source src="https://files.catbox.moe/7wz8q2.mp4" type="video/mp4">
-
-</video>
-
-</div>
+<h2>GRAB COMPANY</h2>
 
 <!-- ROW 1 -->
 
@@ -314,8 +291,10 @@
 
   </div>
 
+</div>
+
 <div class="footer">
-🎰 TRUSTED COMPANY 🎰
+🚀 GRAB COMPANY | FAST • SAFE • VIP SERVICE 🚀
 </div>
 
 </div>
