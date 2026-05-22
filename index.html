@@ -1,1 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WELCOME TRUSTED COMPANY</title>
 
+  <style>
+
+    body{
+      margin:0;
+      padding:0;
+      font-family:Arial;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    /* VIDEO BACKGROUND */
+
+    #bgvideo{
+      position:fixed;
+      right:0;
+      bottom:0;
+
+      min-width:100%;
+      min-height:100%;
+
+      z-index:-1;
+
+      object-fit:cover;
+    }
+
+    .overlay{
+      background:rgba(0,0,0,0.55);
+      min-height:100vh;
+      padding:50px;
+    }
+
+    /* TITLE */
+
+    h1{
+      text-align:center;
+
+      font-size:120px;
+
+      color:gold;
+
+      margin-bottom:20px;
+
+      text-shadow:
+      0 0 20px gold,
+      0 0 40px orange,
+      0 0 60px gold;
+
+      animation:blink 1.5s infinite;
+    }
+
+    h2{
+      text-align:center;
+
+      font-size:60px;
+
+      letter-spacing:8px;
+
+      margin-bottom:50px;
+
+      text-shadow:
+      0 0 15px cyan,
+      0 0 30px white;
+    }
+
+    @keyframes blink{
+      50%{
+        opacity:0.7;
+      }
+    }
+
+    /* JACKPOT VIDEO */
+
+    .jackpot{
+      display:flex;
+      justify-content:center;
+      margin-bottom:80px;
+    }
+
+    .jackpot video{
+      width:1000px;
+
+      border-radius:30px;
+
+      box-shadow:
+      0 0 30px gold,
+      0 0 60px orange;
+    }
+
+    /* COMPANY */
+
+    .row{
+      display:flex;
+      justify-content:center;
+      gap:70px;
+      margin-bottom:70px;
+      flex-wrap:wrap;
+    }
+
+    .card{
+      width:420px;
+
+      background:rgba(255,255,255,0.10);
+
+      border-radius:35px;
+
+      padding:35px;
+
+      text-align:center;
+
+      backdrop-filter:blur(8px);
+
+      box-shadow:
+      0 0 30px gold,
+      0 0 50px orange;
+    }
+
+    .card img{
+      width:380px;
+      height:380px;
+
+      object-fit:cover;
+
+      border-radius:30px;
+
+      box-shadow:
+      0 0 30px cyan,
+      0 0 50px blue;
+
+      transition:0.3s;
+    }
+
+    .card img:hover{
+      transform:scale(1.05);
+    }
+
+    /* BUTTON */
+
+    .btn{
+      display:block;
+
+      margin-top:25px;
+
+      padding:22px;
+
+      border-radius:18px;
+
+      text-decoration:none;
+
+      font-size:32px;
+
+      font-weight:bold;
+
+      color:white;
+
+      background:linear-gradient(45deg,gold,orange);
+
+      box-shadow:
+      0 0 20px gold,
+      0 0 40px orange;
+    }
+
+    .btn2{
+      display:block;
+
+      margin-top:22px;
+
+      padding:22px;
+
+      border-radius:18px;
+
+      text-decoration:none;
+
+      font-size:32px;
+
+      font-weight:bold;
+
+      color:white;
+
+      background:linear-gradient(45deg,#00c6ff,#0072ff);
+
+      box-shadow:
+      0 0 20px cyan,
+      0 0 40px blue;
+    }
+
+    .footer{
+      text-align:center;
+
+      margin-top:80px;
+
+      font-size:35px;
+
+      text-shadow:
+      0 0 10px white,
+      0 0 20px gold;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<!-- BACKGROUND VIDEO -->
+
+<video autoplay muted loop id="bgvideo">
+
+<source src="https://files.catbox.moe/7wz8q2.mp4" type="video/mp4">
+
+</video>
+
+<div class="overlay">
+
+<h1>🎰 WELCOME 🎰</h1>
+
+<h2>TRUSTED COMPANY</h2>
+
+<!-- JACKPOT VIDEO -->
+
+<div class="jackpot">
+
+<video autoplay muted loop controls>
+
+<source src="https://files.catbox.moe/7wz8q2.mp4" type="video/mp4">
+
+</video>
+
+</div>
+
+<!-- ROW 1 -->
+
+<div class="row">
+
+  <!-- COMPANY 1 -->
+
+  <div class="card">
+
+    <a href="https://wa.me/601113385803">
+      <img src="https://i.postimg.cc/L54bxFds/photo-2026-05-22-12-46-56.jpg">
+    </a>
+
+    <a class="btn" href="https://wa.me/601113385803">
+      💬 WHATSAPP 
+    </a>
+
+    <a class="btn2" href="https://t.me/Grab505">
+      📱 TELEGRAM 
+    </a>
+
+  </div>
+
+  <!-- COMPANY 2 -->
+
+  <div class="card">
+
+    <a href="https://wa.me/60103140584">
+      <img src="https://i.postimg.cc/X7JPFWc8/photo-2026-05-22-12-47-03.jpg">
+    </a>
+
+    <a class="btn" href="https://wa.me/60103140584">
+      💬 WHATSAPP 
+    </a>
+
+    <a class="btn2" href="https://t.me/Grab507">
+      📱 TELEGRAM 
+    </a>
+
+  </div>
+
+</div>
+
+<!-- ROW 2 -->
+
+<div class="row">
+
+  <!-- COMPANY 3 -->
+
+  <div class="card">
+
+    <a href="https://wa.me/601156861517">
+      <img src="https://i.postimg.cc/xdrpWzrm/photo-2026-05-22-12-47-08.jpg">
+    </a>
+
+    <a class="btn" href="https://wa.me/601156861517">
+      💬 WHATSAPP 
+    </a>
+
+    <a class="btn2" href="https://t.me/WM69VIP">
+      📱 TELEGRAM 
+    </a>
+
+  </div>
+
+  <!-- COMPANY 4 -->
+
+  <div class="card">
+
+    <a href="https://wa.me/60179586358">
+      <img src="https://i.postimg.cc/9MC8fHQB/photo-2026-05-22-12-47-11.jpg">
+    </a>
+
+    <a class="btn" href="https://wa.me/60179586358">
+      💬 WHATSAPP 
+    </a>
+
+    <a class="btn2" href="https://t.me/W8Casino">
+      📱 TELEGRAM 
+    </a>
+
+  </div>
+
+<div class="footer">
+🎰 TRUSTED COMPANY 🎰
+</div>
+
+</div>
+
+</body>
+</html>
